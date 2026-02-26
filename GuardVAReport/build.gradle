@@ -1,0 +1,159 @@
+plugins {
+    id 'java'
+    id 'eclipse'
+}
+
+description = 'GuardVAReport - Standalone Build'
+
+// Use GDP_JAVA_HOME environment variable for Java compilation
+def gdpJavaHome = System.getenv('GDP_JAVA_HOME')
+if (gdpJavaHome == null || gdpJavaHome.isEmpty()) {
+    throw new GradleException("GDP_JAVA_HOME environment variable is not set. Please set it to point to your JDK installation.")
+}
+
+// Configure Java toolchain to use GDP_JAVA_HOME
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+// Set the Java home for compilation
+tasks.withType(JavaCompile) {
+    options.fork = true
+    options.forkOptions.javaHome = file(gdpJavaHome)
+}
+
+// Source sets configuration
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src']
+            exclude 'test/**'
+        }
+        resources {
+            srcDirs = ['src']
+            exclude 'test/**'
+        }
+    }
+}
+
+// Output directory - match Eclipse output to bin/ folder
+layout.buildDirectory = file('bin')
+
+// Configure output directories to match Eclipse
+sourceSets {
+    main {
+        java.destinationDirectory = file('bin')
+        output.resourcesDir = file('bin')
+    }
+}
+
+repositories {
+    mavenCentral()
+    flatDir {
+        dirs '../GuardReqs/CouchBase_SDK'
+        dirs '../GuardReqs/Log4j2'
+        dirs '../GuardReqs/external'
+        dirs '../GuardReqs/jdbc-drivers'
+        dirs '../GuardReqs/torque-3.0/lib'
+    }
+}
+
+dependencies {
+    // GlobalUtils dependency - use compiled classes
+    implementation project(':GlobalUtils')
+
+    implementation files('../GuardReqs/jdbc-drivers/db2jcc_license_cu.jar')
+    implementation files('../GuardReqs/jdbc-drivers/db2jcc.jar')
+    implementation files('../GuardReqs/jdbc-drivers/GUOracle.jar')
+    implementation files('../GuardReqs/jdbc-drivers/oraclepki.jar')
+    implementation files('../GuardReqs/jdbc-drivers/osdt_cert.jar')
+    implementation files('../GuardReqs/jdbc-drivers/osdt_core.jar')
+    implementation files('../GuardReqs/jdbc-drivers/ddcassandra.jar')
+    implementation files('../GuardReqs/jdbc-drivers/GUSqlServer.jar')
+    implementation files('../GuardReqs/jdbc-drivers/EccpressoFIPS.jar')
+    implementation files('../GuardReqs/jdbc-drivers/EccpressoFIPSJca.jar')
+    implementation files('../GuardReqs/jdbc-drivers/ifxjdbc.jar')
+    implementation files('../GuardReqs/jdbc-drivers/jcifs.jar')
+    implementation files('../GuardReqs/jdbc-drivers/jconn4.jar')
+    implementation files('../GuardReqs/jdbc-drivers/jt400.jar')
+    implementation files('../GuardReqs/jdbc-drivers/mongo-java-driver-2.11.3.jar')
+    implementation files('../GuardReqs/jdbc-drivers/ngdbc.jar')
+    implementation files('../GuardReqs/jdbc-drivers/noarch-aster-jdbc-driver.jar')
+    implementation files('../GuardReqs/jdbc-drivers/nzjdbc.jar')
+    implementation files('../GuardReqs/jdbc-drivers/postgresql-42.5.6.jar')
+    implementation files('../GuardReqs/jdbc-drivers/tarbz2.jar')
+    implementation files('../GuardReqs/jdbc-drivers/terajdbc4.jar')
+    implementation files('../GuardReqs/jdbc-drivers/Text_JDBC30.jar')
+    implementation files('../GuardReqs/torque-3.0/lib/jdbc-2.0.jar')
+    implementation files('../GuardReqs/torque-3.0/lib/junit-3.8.1.jar')
+    implementation files('../GuardReqs/Log4j2/log4j-1.2-api-2.17.1.jar')
+    implementation files('../GuardReqs/CouchBase_SDK/reactive-streams-1.0.3.jar')
+    implementation files('../GuardReqs/Log4j2/log4j-api-2.17.1.jar')
+    implementation files('../GuardReqs/Log4j2/log4j-core-2.17.1.jar')
+    implementation files('../GuardReqs/CouchBase_SDK/core-io-2.2.4.jar')
+    implementation files('../GuardReqs/CouchBase_SDK/java-client-3.2.4.jar')
+    implementation files('../GuardReqs/CouchBase_SDK/reactor-core-3.4.12.jar')
+    implementation files('../GuardReqs/jdbc-drivers/neo4j-jdbc-bundle-6.4.0.jar')
+    implementation files('../GuardReqs/external/jaxb-api.jar')
+    implementation files('../GuardReqs/external/jaxb-runtime.jar')
+    implementation files('../GuardReqs/jdbc-drivers/snowflake-jdbc-3.23.1.jar')
+    
+    // Test dependencies
+    testImplementation 'junit:junit:4.13.2'
+}
+
+// Compilation tasks
+compileJava {
+    sourceCompatibility = '17'
+    targetCompatibility = '17'
+    options.encoding = 'UTF-8'
+    options.compilerArgs += ['-Xlint:none', '-nowarn']
+    options.warnings = false
+}
+
+compileTestJava {
+    sourceCompatibility = '17'
+    targetCompatibility = '17'
+    options.encoding = 'UTF-8'
+    options.compilerArgs += ['-Xlint:none', '-nowarn']
+    options.warnings = false
+}
+
+// Test task configuration
+test {
+    useJUnit()
+    testLogging {
+        events "passed", "skipped", "failed"
+        exceptionFormat = "full"
+    }
+}
+
+// Jar task configuration - output to bin directory
+jar {
+    archiveBaseName = 'guardvareport'
+    archiveVersion = '1.0.0'
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    from(sourceSets.main.output.classesDirs) {
+        include '**/*.class'
+    }
+    from(sourceSets.main.output.resourcesDir) {
+        exclude '**/*.java'
+        exclude '**/*.gradle'
+        exclude '**/build/**'
+        exclude '**/bin/**'
+    }
+}
+
+// Clean task - only clean bin directory
+// Fix circular dependency between compileJava and processResources
+tasks.named('processResources') {
+    mustRunAfter tasks.named('compileJava')
+}
+
+
+clean {
+    delete 'bin'
+}
+
