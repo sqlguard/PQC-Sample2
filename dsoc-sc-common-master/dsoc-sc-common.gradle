@@ -1,0 +1,76 @@
+description = 'IBM Security Guardium Analyzer - Data Connector Common Utilities'
+
+apply from: '../dsoc-scripts/build/java-library.gradle'
+apply from: '../dsoc-scripts/build/eclipse.gradle'
+apply from: '../dsoc-scripts/build/junit.gradle'
+apply from: '../dsoc-scripts/build/jacoco.gradle'
+apply from: '../dsoc-scripts/build/javadoc.gradle'
+apply from: '../dsoc-scripts/build/integration-test.gradle'
+apply from: '../dsoc-scripts/build/copyright-enforcement.gradle'
+
+dependencies {
+    api 'log4j:log4j:1.2.17'
+    api 'com.google.code.gson:gson:2.3.1'
+    api 'com.h2database:h2:1.4.199'
+    api 'commons-codec:commons-codec:1.9'
+    implementation 'org.apache.commons:commons-lang3:3.7'
+    implementation 'BigInsights:commons-cli:2.0'
+}
+
+sourceSets {
+    tools {
+        compileClasspath += main.compileClasspath + main.runtimeClasspath
+        runtimeClasspath += main.runtimeClasspath
+    }
+}
+
+task toolsJar(type: Jar, group: 'build', dependsOn: classes) {
+    description = 'Assembles the tools jar.'
+    from sourceSets.tools.output
+    classifier = 'tools'
+}
+
+artifacts {
+    archives toolsJar
+    //add('default', toolsJar)
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            groupId 'com.guardium'
+            artifact toolsJar { classifier toolsJar.classifier }
+        }
+    }
+}
+
+task getDbSecret(type: JavaExec, dependsOn: 'classes') {
+    classpath = sourceSets.main.runtimeClasspath + sourceSets.tools.runtimeClasspath
+    main = 'com.guardium.tools.DbSecret'
+
+    if (project.hasProperty("arg")) {
+        args Eval.me(getCommandLineArguments(arg))
+    }
+}
+
+task getKsSecret(type: JavaExec, dependsOn: 'classes') {
+    classpath = sourceSets.main.runtimeClasspath + sourceSets.tools.runtimeClasspath
+    main = 'com.guardium.tools.KeyStoreSecret'
+
+    if (project.hasProperty("arg")) {
+        args Eval.me(getCommandLineArguments(arg))
+    }
+}
+
+task setupBuildEnvironment {
+    doLast {
+        copy {
+            from fileTree("src/environment/${gradle.ext.environment}")
+            into 'src'
+        }
+    }
+}
+
+compileJava.dependsOn setupBuildEnvironment
+
+// clean.delete << new File('src/main/java/com/guardium/connector/common/env')
