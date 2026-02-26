@@ -1,0 +1,17 @@
+/*
+ * IBM Confidential
+ * OCO Source Materials
+ * © Copyright IBM Corp. 2002, 2023
+ * The source code for this program is not published or otherwise divested of its trade secrets, irrespective of what has been deposited with the U.S. Copyright Office.
+ */
+package com.guardium.utils.runtime;
+
+class RegexAlternative { //represents a pattern, but could be either a resorce id or a var
+	int groupNumber;
+	String pattern;
+	
+	RegexAlternative(int count, String pattern) {
+		this.pattern = pattern;
+		groupNumber = count;
+	}
+}
