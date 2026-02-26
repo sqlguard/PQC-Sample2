@@ -1,0 +1,632 @@
+<?xml version="1.0"?>
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="TURBINE">
+	<table_structure name="GROUP_TYPE">
+		<field Field="GROUP_TYPE_ID" Type="int(11)" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="TYPE_DESCRIPTION" Type="varchar(150)" Null="NO" Key="" Default="" Extra="" Comment="" />
+		<field Field="TIMESTAMP" Type="timestamp" Null="NO" Key="" Default="CURRENT_TIMESTAMP" Extra="on update CURRENT_TIMESTAMP" Comment="" />
+		<field Field="TUPLE_FLAG" Type="int(11)" Null="NO" Key="" Default="1" Extra="" Comment="" />
+		<field Field="ALLOW_REGEX" Type="int(11)" Null="NO" Key="" Default="0" Extra="" Comment="" />
+		<key Table="GROUP_TYPE" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="GROUP_TYPE_ID" Collation="A" Cardinality="88" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<options Name="GROUP_TYPE" Engine="MyISAM" Version="10" Row_format="Dynamic" Rows="88" Avg_row_length="34" Data_length="3020" Max_data_length="281474976710655" Index_length="8192" Data_free="0" Auto_increment="20000" Create_time="2016-08-12 08:41:57" Update_time="2016-08-12 08:41:57" Collation="utf8_general_ci" Create_options="" Comment="" />
+	</table_structure>
+	<table_data name="GROUP_TYPE">
+	<row>
+		<field name="GROUP_TYPE_ID">1</field>
+		<field name="TYPE_DESCRIPTION">USERS</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">2</field>
+		<field name="TYPE_DESCRIPTION">COMMANDS</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="TYPE_DESCRIPTION">OBJECTS</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">4</field>
+		<field name="TYPE_DESCRIPTION">YEAR</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">5</field>
+		<field name="TYPE_DESCRIPTION">WEEKDAY</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">6</field>
+		<field name="TYPE_DESCRIPTION">FIELDS</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">7</field>
+		<field name="TYPE_DESCRIPTION">SOURCE PROGRAM</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">8</field>
+		<field name="TYPE_DESCRIPTION">DB PROTOCOL VERSION</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">9</field>
+		<field name="TYPE_DESCRIPTION">DB PROTOCOL</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">10</field>
+		<field name="TYPE_DESCRIPTION">NET PROTOCOL</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">11</field>
+		<field name="TYPE_DESCRIPTION">PORT</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">12</field>
+		<field name="TYPE_DESCRIPTION">Client IP</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">13</field>
+		<field name="TYPE_DESCRIPTION">SERVER TYPE</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">14</field>
+		<field name="TYPE_DESCRIPTION">SENTENCE DEPTH</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">15</field>
+		<field name="TYPE_DESCRIPTION">SCHEMA</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">16</field>
+		<field name="TYPE_DESCRIPTION">TTL</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">17</field>
+		<field name="TYPE_DESCRIPTION">Exception Type Description</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">18</field>
+		<field name="TYPE_DESCRIPTION">APPLICATION USER</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">19</field>
+		<field name="TYPE_DESCRIPTION">Server IP</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">20</field>
+		<field name="TYPE_DESCRIPTION">Server OS</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">21</field>
+		<field name="TYPE_DESCRIPTION">Client OS</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">22</field>
+		<field name="TYPE_DESCRIPTION">OS User</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">23</field>
+		<field name="TYPE_DESCRIPTION">Server Hostname</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">24</field>
+		<field name="TYPE_DESCRIPTION">Server Description</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">25</field>
+		<field name="TYPE_DESCRIPTION">Client MAC Address</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">26</field>
+		<field name="TYPE_DESCRIPTION">Client Hostname</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">27</field>
+		<field name="TYPE_DESCRIPTION">Service Name</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">28</field>
+		<field name="TYPE_DESCRIPTION">Database Name</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">29</field>
+		<field name="TYPE_DESCRIPTION">Guardium Audit Categories</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">30</field>
+		<field name="TYPE_DESCRIPTION">DB Error Codes</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">31</field>
+		<field name="TYPE_DESCRIPTION">Application Module</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">32</field>
+		<field name="TYPE_DESCRIPTION">Records Affected</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">33</field>
+		<field name="TYPE_DESCRIPTION">Object/Command</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">2</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">34</field>
+		<field name="TYPE_DESCRIPTION">Object/Field</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">2</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">35</field>
+		<field name="TYPE_DESCRIPTION">DB Role</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">36</field>
+		<field name="TYPE_DESCRIPTION">Application Event Value Type</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">37</field>
+		<field name="TYPE_DESCRIPTION">Application Event Value String</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">38</field>
+		<field name="TYPE_DESCRIPTION">Application Event Value Number</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">39</field>
+		<field name="TYPE_DESCRIPTION">Operation Type</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">40</field>
+		<field name="TYPE_DESCRIPTION">Global ID</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">41</field>
+		<field name="TYPE_DESCRIPTION">Audit Task Type</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">42</field>
+		<field name="TYPE_DESCRIPTION">Login Succeded Code</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">43</field>
+		<field name="TYPE_DESCRIPTION">DB Ver./Patches</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">2</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">44</field>
+		<field name="TYPE_DESCRIPTION">Application Item Name</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">45</field>
+		<field name="TYPE_DESCRIPTION">Application Transaction Code</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">46</field>
+		<field name="TYPE_DESCRIPTION">Application System ID</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">47</field>
+		<field name="TYPE_DESCRIPTION">Client IP/DB User</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">2</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">48</field>
+		<field name="TYPE_DESCRIPTION">File Permissions</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">2</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">49</field>
+		<field name="TYPE_DESCRIPTION">Guardium Users</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">50</field>
+		<field name="TYPE_DESCRIPTION">Server IP/DB User</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">2</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">51</field>
+		<field name="TYPE_DESCRIPTION">CVE Pre-defined Tests</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">52</field>
+		<field name="TYPE_DESCRIPTION">SQL Based pre-defined Tests</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">53</field>
+		<field name="TYPE_DESCRIPTION">TeraData Profile/DB User</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">2</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">54</field>
+		<field name="TYPE_DESCRIPTION">DB User/Object/Privilege</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">3</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">55</field>
+		<field name="TYPE_DESCRIPTION">VA Tests Exception</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">56</field>
+		<field name="TYPE_DESCRIPTION">Qualified Objects</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">5</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">57</field>
+		<field name="TYPE_DESCRIPTION">Guardium Role</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">58</field>
+		<field name="TYPE_DESCRIPTION">Server IP/Server Port</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">2</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">59</field>
+		<field name="TYPE_DESCRIPTION">Server IP/Svc. Name/DB User</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">3</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">60</field>
+		<field name="TYPE_DESCRIPTION">Client IP/Src App./DB User/Server IP/Svc. Name</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">5</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">61</field>
+		<field name="TYPE_DESCRIPTION">Client IP/Src App./DB User</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">3</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">62</field>
+		<field name="TYPE_DESCRIPTION">Server IP/Instance Name/Port</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">3</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">63</field>
+		<field name="TYPE_DESCRIPTION">DB User/DB Password</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">2</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">64</field>
+		<field name="TYPE_DESCRIPTION">URL Prefix</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">1</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">65</field>
+		<field name="TYPE_DESCRIPTION">URL Suffix</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">1</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">66</field>
+		<field name="TYPE_DESCRIPTION">APAR Pre-defined Tests</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">67</field>
+		<field name="TYPE_DESCRIPTION">Client Info</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">68</field>
+		<field name="TYPE_DESCRIPTION">Replay Compare Mode</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">69</field>
+		<field name="TYPE_DESCRIPTION">Utilization Level</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">70</field>
+		<field name="TYPE_DESCRIPTION">Map Reduce Name/Map Reduce User</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">2</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">71</field>
+		<field name="TYPE_DESCRIPTION">IMS Target DB/Segment</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">72</field>
+		<field name="TYPE_DESCRIPTION">Regular Expression</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">73</field>
+		<field name="TYPE_DESCRIPTION">Text</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">74</field>
+		<field name="TYPE_DESCRIPTION">Data Repository</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">75</field>
+		<field name="TYPE_DESCRIPTION">Function Code</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">76</field>
+		<field name="TYPE_DESCRIPTION">Cics User</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">77</field>
+		<field name="TYPE_DESCRIPTION">Transaction ID</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">78</field>
+		<field name="TYPE_DESCRIPTION">Terminal ID</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">79</field>
+		<field name="TYPE_DESCRIPTION">Program ID</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">80</field>
+		<field name="TYPE_DESCRIPTION">File ID</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">81</field>
+		<field name="TYPE_DESCRIPTION">Region ID</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">82</field>
+		<field name="TYPE_DESCRIPTION">File Names</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">83</field>
+		<field name="TYPE_DESCRIPTION">Managed Units</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">84</field>
+		<field name="TYPE_DESCRIPTION">FAM Datasources</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">85</field>
+		<field name="TYPE_DESCRIPTION">STAP</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">86</field>
+		<field name="TYPE_DESCRIPTION">FAM Commands</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">87</field>
+		<field name="TYPE_DESCRIPTION">Category</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">1</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	<row>
+		<field name="GROUP_TYPE_ID">88</field>
+		<field name="TYPE_DESCRIPTION">Client IP/Src App./DB User/Server IP/Svc. Name/OS User/DB Name</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:22</field>
+		<field name="TUPLE_FLAG">7</field>
+		<field name="ALLOW_REGEX">0</field>
+	</row>
+	</table_data>
+</database>
+</mysqldump>

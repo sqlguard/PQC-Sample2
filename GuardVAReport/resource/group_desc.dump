@@ -1,0 +1,3089 @@
+<?xml version="1.0"?>
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="TURBINE">
+	<table_structure name="GROUP_DESC">
+		<field Field="GROUP_ID" Type="int(11)" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="GROUP_TYPE_ID" Type="int(11)" Null="NO" Key="" Default="0" Extra="" Comment="" />
+		<field Field="APPLICATION_ID" Type="int(11)" Null="NO" Key="" Default="0" Extra="" Comment="" />
+		<field Field="GROUP_DESCRIPTION" Type="varchar(150)" Null="NO" Key="" Default="" Extra="" Comment="" />
+		<field Field="GROUP_SUBTYPE" Type="varchar(20)" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="CATEGORY_NAME" Type="varchar(60)" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="CLASSIFICATION_NAME" Type="varchar(60)" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="TIMESTAMP" Type="timestamp" Null="NO" Key="" Default="CURRENT_TIMESTAMP" Extra="on update CURRENT_TIMESTAMP" Comment="" />
+		<field Field="GROUP_CONTENT_TYPE" Type="varchar(1)" Null="NO" Key="" Default="M" Extra="" Comment="" />
+		<key Table="GROUP_DESC" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="GROUP_ID" Collation="A" Cardinality="279" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<options Name="GROUP_DESC" Engine="MyISAM" Version="10" Row_format="Dynamic" Rows="279" Avg_row_length="53" Data_length="14924" Max_data_length="281474976710655" Index_length="8192" Data_free="0" Auto_increment="20002" Create_time="2016-08-12 08:41:57" Update_time="2016-08-12 14:45:04" Collation="utf8_general_ci" Create_options="" Comment="" />
+	</table_structure>
+	<table_data name="GROUP_DESC">
+	<row>
+		<field name="GROUP_ID">1</field>
+		<field name="GROUP_TYPE_ID">1</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Admin Users</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">2</field>
+		<field name="GROUP_TYPE_ID">2</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">DDL Commands</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">3</field>
+		<field name="GROUP_TYPE_ID">2</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">DML Commands</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">4</field>
+		<field name="GROUP_TYPE_ID">2</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Select Command</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">5</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Sensitive Objects</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">6</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Administration Objects</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">7</field>
+		<field name="GROUP_TYPE_ID">2</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Administrative Commands</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">8</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Potential Overflow Objects</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">9</field>
+		<field name="GROUP_TYPE_ID">1</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Suspicious Users</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">10</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Suspicious Objects</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">11</field>
+		<field name="GROUP_TYPE_ID">1</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Oracle Predefined Users</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">12</field>
+		<field name="GROUP_TYPE_ID">2</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Java Commands</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">13</field>
+		<field name="GROUP_TYPE_ID">2</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Performance Commands</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">14</field>
+		<field name="GROUP_TYPE_ID">2</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Procedural Commands</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">15</field>
+		<field name="GROUP_TYPE_ID">2</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">CREATE Commands</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">16</field>
+		<field name="GROUP_TYPE_ID">2</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">DROP Commands</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">17</field>
+		<field name="GROUP_TYPE_ID">2</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">ALTER Commands</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">18</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">MS-SQL System Procedures</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">19</field>
+		<field name="GROUP_TYPE_ID">2</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">GRANT Commands</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">20</field>
+		<field name="GROUP_TYPE_ID">2</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">DBCC Commands</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">21</field>
+		<field name="GROUP_TYPE_ID">2</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Data Transfer Commands</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">22</field>
+		<field name="GROUP_TYPE_ID">2</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">RESTORE Commands</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">23</field>
+		<field name="GROUP_TYPE_ID">2</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">REVOKE Commands</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">24</field>
+		<field name="GROUP_TYPE_ID">2</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">KILL Commands</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">25</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">MS-SQL Replication Procedures</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">26</field>
+		<field name="GROUP_TYPE_ID">1</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">DB Predefined Users</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">27</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">MS-SQL Security System Procedures</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">28</field>
+		<field name="GROUP_TYPE_ID">29</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Guardium Audit Categories for Detailed Reporting</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">29</field>
+		<field name="GROUP_TYPE_ID">2</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">PROCEDURE DDL</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">30</field>
+		<field name="GROUP_TYPE_ID">2</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">EXECUTE Commands</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">31</field>
+		<field name="GROUP_TYPE_ID">7</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">SPECIAL CASE Source Programs</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">32</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">ImportLDAPUser</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">33</field>
+		<field name="GROUP_TYPE_ID">19</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">EBS DB Servers</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">34</field>
+		<field name="GROUP_TYPE_ID">12</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">EBS App Servers</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">35</field>
+		<field name="GROUP_TYPE_ID">1</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Terminated DB Users</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">36</field>
+		<field name="GROUP_TYPE_ID">1</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Active Users</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">37</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Archive Candidates</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">38</field>
+		<field name="GROUP_TYPE_ID">12</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">PSFT App Servers</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">39</field>
+		<field name="GROUP_TYPE_ID">19</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">PSFT DB Servers</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">40</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">PeopleSoft Objects</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">41</field>
+		<field name="GROUP_TYPE_ID">19</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">SIEBEL DB Servers</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">42</field>
+		<field name="GROUP_TYPE_ID">12</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">SIEBEL App Servers</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">43</field>
+		<field name="GROUP_TYPE_ID">19</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">SAP DB Servers</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">44</field>
+		<field name="GROUP_TYPE_ID">12</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">SAP App Servers</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">45</field>
+		<field name="GROUP_TYPE_ID">19</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">ICM DB Servers</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">46</field>
+		<field name="GROUP_TYPE_ID">12</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">ICM App Servers</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">47</field>
+		<field name="GROUP_TYPE_ID">2</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Windows File Share Verbs</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">48</field>
+		<field name="GROUP_TYPE_ID">43</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">DB2 Database Version+Patches</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">49</field>
+		<field name="GROUP_TYPE_ID">43</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">Informix Database Version+Patches</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">50</field>
+		<field name="GROUP_TYPE_ID">43</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">MS Sql Server Database Version+Patches</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">51</field>
+		<field name="GROUP_TYPE_ID">43</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">MySql Database Version+Patches</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">52</field>
+		<field name="GROUP_TYPE_ID">43</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">Oracle Database Version+Patches</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">53</field>
+		<field name="GROUP_TYPE_ID">43</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">Sybase Database Version+Patches</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">54</field>
+		<field name="GROUP_TYPE_ID">2</field>
+		<field name="APPLICATION_ID">55</field>
+		<field name="GROUP_DESCRIPTION">zOS Audit Dynamic SQL</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">55</field>
+		<field name="GROUP_TYPE_ID">2</field>
+		<field name="APPLICATION_ID">55</field>
+		<field name="GROUP_DESCRIPTION">zOS Audit Query</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">56</field>
+		<field name="GROUP_TYPE_ID">2</field>
+		<field name="APPLICATION_ID">55</field>
+		<field name="GROUP_DESCRIPTION">zOS Audit Updates</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">57</field>
+		<field name="GROUP_TYPE_ID">2</field>
+		<field name="APPLICATION_ID">55</field>
+		<field name="GROUP_DESCRIPTION">zOS Audit Deletes</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">58</field>
+		<field name="GROUP_TYPE_ID">2</field>
+		<field name="APPLICATION_ID">55</field>
+		<field name="GROUP_DESCRIPTION">zOS Audit Inserts</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">59</field>
+		<field name="GROUP_TYPE_ID">2</field>
+		<field name="APPLICATION_ID">55</field>
+		<field name="GROUP_DESCRIPTION">zOS Audit Utilities</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">60</field>
+		<field name="GROUP_TYPE_ID">2</field>
+		<field name="APPLICATION_ID">55</field>
+		<field name="GROUP_DESCRIPTION">zOS Audit Object Maintenance</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">61</field>
+		<field name="GROUP_TYPE_ID">2</field>
+		<field name="APPLICATION_ID">55</field>
+		<field name="GROUP_DESCRIPTION">zOS Audit User Maintenance</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">62</field>
+		<field name="GROUP_TYPE_ID">2</field>
+		<field name="APPLICATION_ID">55</field>
+		<field name="GROUP_DESCRIPTION">zOS Audit User Authorization Changes</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">63</field>
+		<field name="GROUP_TYPE_ID">2</field>
+		<field name="APPLICATION_ID">55</field>
+		<field name="GROUP_DESCRIPTION">zOS Audit DB2 Commands</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">64</field>
+		<field name="GROUP_TYPE_ID">55</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">MS-SQL Extended Procedures Allowed</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">65</field>
+		<field name="GROUP_TYPE_ID">1</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">MS-SQL Database Administrators</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">66</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Public executable procedures</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">67</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Public selectable object</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">68</field>
+		<field name="GROUP_TYPE_ID">30</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Risk-indicative Error Messages</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">69</field>
+		<field name="GROUP_TYPE_ID">1</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Application Schema Users</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">70</field>
+		<field name="GROUP_TYPE_ID">2</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Account Management Commands</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">71</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Account Management Procedures</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">72</field>
+		<field name="GROUP_TYPE_ID">2</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">System Configuration Commands</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">73</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">System Configuration Procedures</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">74</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Data Transfer Procedures</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">75</field>
+		<field name="GROUP_TYPE_ID">2</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Peer Association Commands</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">76</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Peer Association Procedures</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">77</field>
+		<field name="GROUP_TYPE_ID">2</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Application Privileged Commands</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">78</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Application Privileged Procedures</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">79</field>
+		<field name="GROUP_TYPE_ID">2</field>
+		<field name="APPLICATION_ID">55</field>
+		<field name="GROUP_DESCRIPTION">zOS Audit Plan/PackageMaintenance</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">80</field>
+		<field name="GROUP_TYPE_ID">7</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Administrative Programs</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">81</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Vulnerable Objects (with wildcards)</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">82</field>
+		<field name="GROUP_TYPE_ID">55</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">Sybase Allowed Grants to Public</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">83</field>
+		<field name="GROUP_TYPE_ID">55</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">MS-SQL Allowed Grants to Public</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">84</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Oracle EBS - PCI</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">85</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Oracle EBS - SOX</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">86</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">SAP - PCI</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">87</field>
+		<field name="GROUP_TYPE_ID">29</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Policy Related Entities</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME"></field>
+		<field name="CLASSIFICATION_NAME"></field>
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">88</field>
+		<field name="GROUP_TYPE_ID">29</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Credentials Related Entities</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME">Self Monitoring</field>
+		<field name="CLASSIFICATION_NAME"></field>
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">89</field>
+		<field name="GROUP_TYPE_ID">29</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Inspection Engine Entities</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME"></field>
+		<field name="CLASSIFICATION_NAME"></field>
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">90</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">ImportLDAPUser_bindValues</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">91</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">2</field>
+		<field name="GROUP_DESCRIPTION">Cardholder Objects</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME"></field>
+		<field name="CLASSIFICATION_NAME"></field>
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">92</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">2</field>
+		<field name="GROUP_DESCRIPTION">Financial Objects</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME"></field>
+		<field name="CLASSIFICATION_NAME"></field>
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">93</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">2</field>
+		<field name="GROUP_DESCRIPTION">PHI Objects</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME"></field>
+		<field name="CLASSIFICATION_NAME"></field>
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">94</field>
+		<field name="GROUP_TYPE_ID">7</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Authorized Source Programs</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME"></field>
+		<field name="CLASSIFICATION_NAME"></field>
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">95</field>
+		<field name="GROUP_TYPE_ID">12</field>
+		<field name="APPLICATION_ID">2</field>
+		<field name="GROUP_DESCRIPTION">Authorized Client IPs</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME"></field>
+		<field name="CLASSIFICATION_NAME"></field>
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">96</field>
+		<field name="GROUP_TYPE_ID">1</field>
+		<field name="APPLICATION_ID">2</field>
+		<field name="GROUP_DESCRIPTION">Production Users</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME">Access</field>
+		<field name="CLASSIFICATION_NAME"></field>
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">97</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">2</field>
+		<field name="GROUP_DESCRIPTION">PII Objects</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME"></field>
+		<field name="CLASSIFICATION_NAME"></field>
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">98</field>
+		<field name="GROUP_TYPE_ID">19</field>
+		<field name="APPLICATION_ID">2</field>
+		<field name="GROUP_DESCRIPTION">Production Servers</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME"></field>
+		<field name="CLASSIFICATION_NAME"></field>
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">99</field>
+		<field name="GROUP_TYPE_ID">19</field>
+		<field name="APPLICATION_ID">2</field>
+		<field name="GROUP_DESCRIPTION">Financial Servers</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME"></field>
+		<field name="CLASSIFICATION_NAME"></field>
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">100</field>
+		<field name="GROUP_TYPE_ID">1</field>
+		<field name="APPLICATION_ID">2</field>
+		<field name="GROUP_DESCRIPTION">Functional Users</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME"></field>
+		<field name="CLASSIFICATION_NAME"></field>
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">101</field>
+		<field name="GROUP_TYPE_ID">1</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Authorized  Users</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME"></field>
+		<field name="CLASSIFICATION_NAME"></field>
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">102</field>
+		<field name="GROUP_TYPE_ID">2</field>
+		<field name="APPLICATION_ID">61</field>
+		<field name="GROUP_DESCRIPTION">zOS IMS Audit Query</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">103</field>
+		<field name="GROUP_TYPE_ID">2</field>
+		<field name="APPLICATION_ID">61</field>
+		<field name="GROUP_DESCRIPTION">zOS IMS Audit Updates</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">104</field>
+		<field name="GROUP_TYPE_ID">2</field>
+		<field name="APPLICATION_ID">61</field>
+		<field name="GROUP_DESCRIPTION">zOS IMS Audit Deletes</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">105</field>
+		<field name="GROUP_TYPE_ID">2</field>
+		<field name="APPLICATION_ID">61</field>
+		<field name="GROUP_DESCRIPTION">zOS IMS Audit Inserts</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">106</field>
+		<field name="GROUP_TYPE_ID">2</field>
+		<field name="APPLICATION_ID">61</field>
+		<field name="GROUP_DESCRIPTION">zOS IMS Audit DB Commands</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">107</field>
+		<field name="GROUP_TYPE_ID">53</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">Teradata Profile</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">109</field>
+		<field name="GROUP_TYPE_ID">43</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">Teradata PDE Version+Patches</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">110</field>
+		<field name="GROUP_TYPE_ID">43</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">Teradata TDBMS Version+Patches</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">111</field>
+		<field name="GROUP_TYPE_ID">43</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">Teradata TDGSS Version+Patches</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">112</field>
+		<field name="GROUP_TYPE_ID">43</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">Teradata TGTW Version+Patches</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">113</field>
+		<field name="GROUP_TYPE_ID">43</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">Netezza Version+Patches</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">114</field>
+		<field name="GROUP_TYPE_ID">43</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">Postgress Version+Patches</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">115</field>
+		<field name="GROUP_TYPE_ID">55</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">DB2 Allowed Grants to Public</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">116</field>
+		<field name="GROUP_TYPE_ID">55</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">Teradata Allowed Grants to Public</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">117</field>
+		<field name="GROUP_TYPE_ID">55</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">PostgreSQL Allowed Grants to Public</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">118</field>
+		<field name="GROUP_TYPE_ID">55</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">Netezza Allowed Grants to Public</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">119</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">MASKED_SP_EXECUTIONS_SYBASE</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">120</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">MASKED_SP_EXECUTIONS_MS_SQL_SERVER</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">121</field>
+		<field name="GROUP_TYPE_ID">34</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">DW SELECT Accessed Objects-Fields</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">122</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">DW All Objects</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">123</field>
+		<field name="GROUP_TYPE_ID">34</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">DW All Object-Field</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">124</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">DW SELECT Accessed Objects</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">125</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">DW EXECUTE Accessed Object</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">126</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">DW EXECUTE Objects</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">127</field>
+		<field name="GROUP_TYPE_ID">63</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">ORACLE Default Users</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">128</field>
+		<field name="GROUP_TYPE_ID">63</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">DB2 Default Users</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">129</field>
+		<field name="GROUP_TYPE_ID">63</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">SYBASE Default Users</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">130</field>
+		<field name="GROUP_TYPE_ID">63</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">MS SQL SERVER Default Users</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">131</field>
+		<field name="GROUP_TYPE_ID">63</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">INFORMIX Default Users</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">132</field>
+		<field name="GROUP_TYPE_ID">63</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">MYSQL Default Users</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">133</field>
+		<field name="GROUP_TYPE_ID">63</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">TERADATA Default Users</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">134</field>
+		<field name="GROUP_TYPE_ID">63</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">IBM ISERIES Default Users</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">135</field>
+		<field name="GROUP_TYPE_ID">63</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">POSTGRESQL Default Users</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">136</field>
+		<field name="GROUP_TYPE_ID">63</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">NETEZZA Default Users</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">137</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">PeopleSoft Sensitive Objects</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">138</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Oracle EBS HRMS Sensitive Objects</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">139</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Siebel SIA Sensitive Objects</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">140</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">SAP HR Sensitive Objects</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">141</field>
+		<field name="GROUP_TYPE_ID">19</field>
+		<field name="APPLICATION_ID">2</field>
+		<field name="GROUP_DESCRIPTION">Sharepoint Servers</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">142</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Replay - Include in Compare</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">143</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Replay - Exclude from Compare</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">144</field>
+		<field name="GROUP_TYPE_ID">55</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">DB2 Allowed Grants to Public non-restrictive</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">145</field>
+		<field name="GROUP_TYPE_ID">67</field>
+		<field name="APPLICATION_ID">2</field>
+		<field name="GROUP_DESCRIPTION">DB2/Z Exclude Workstation Example</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">146</field>
+		<field name="GROUP_TYPE_ID">18</field>
+		<field name="APPLICATION_ID">2</field>
+		<field name="GROUP_DESCRIPTION">DB2/Z Exclude Plan Example</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">147</field>
+		<field name="GROUP_TYPE_ID">10</field>
+		<field name="APPLICATION_ID">2</field>
+		<field name="GROUP_DESCRIPTION">DB2/Z Connection Types</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">148</field>
+		<field name="GROUP_TYPE_ID">2</field>
+		<field name="APPLICATION_ID">2</field>
+		<field name="GROUP_DESCRIPTION">DB2/Z General Audit Types</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">149</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Vulnerable Objects (with wildcards) - Oracle</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">150</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Vulnerable Objects (with wildcards) - DB2</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">151</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Vulnerable Objects (with wildcards) - Sybase</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">152</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Vulnerable Objects (with wildcards) - MSSQL Server</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">153</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Vulnerable Objects (with wildcards) - Informix</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">154</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Vulnerable Objects (with wildcards) - MySQL</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">155</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Vulnerable Objects (with wildcards) - Teradata</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">156</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Vulnerable Objects (with wildcards) - DB2 iSeries</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">157</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Vulnerable Objects (with wildcards) - PostgreSQL</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">158</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Vulnerable Objects (with wildcards) - Netezza</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">159</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Vulnerable Objects (with wildcards) - DB2 z/OS</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">160</field>
+		<field name="GROUP_TYPE_ID">55</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">Teradata Grant option granted on objects to user and databases</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">161</field>
+		<field name="GROUP_TYPE_ID">55</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">Teradata GRANT option granted on system privileges to users and databases</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">162</field>
+		<field name="GROUP_TYPE_ID">55</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">Teradata No individual database privileges</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">163</field>
+		<field name="GROUP_TYPE_ID">55</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">Teradata No individual object privileges</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">164</field>
+		<field name="GROUP_TYPE_ID">55</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">Teradata System database objects granted to users and databases</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">165</field>
+		<field name="GROUP_TYPE_ID">55</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">Oracle Only DBA Access To SYS.USER$</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">166</field>
+		<field name="GROUP_TYPE_ID">55</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">MS-SQL DDL granted to user</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">167</field>
+		<field name="GROUP_TYPE_ID">55</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">MS-SQL Procedures granted to users</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">168</field>
+		<field name="GROUP_TYPE_ID">55</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">MS-SQL No Individual User Privileges</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">169</field>
+		<field name="GROUP_TYPE_ID">43</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">SybaseIQ Database Version+Patches</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">170</field>
+		<field name="GROUP_TYPE_ID">55</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">Sybase IQ Procedures and functions granted to PUBLIC</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">171</field>
+		<field name="GROUP_TYPE_ID">55</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">Sybase IQ No individual procedures or functions privileges</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">172</field>
+		<field name="GROUP_TYPE_ID">55</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">MS-SQL No Access to Registry Access Extended procedures</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">173</field>
+		<field name="GROUP_TYPE_ID">55</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">MS-SQL Role granted to role</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">174</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Hadoop Skip Objects</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">175</field>
+		<field name="GROUP_TYPE_ID">2</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Hadoop Skip Commands</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">176</field>
+		<field name="GROUP_TYPE_ID">19</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Not Hadoop Servers</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">177</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Hadoop Authorized Job List</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">178</field>
+		<field name="GROUP_TYPE_ID">1</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">Critical Accounts - Oracle</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">179</field>
+		<field name="GROUP_TYPE_ID">1</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">Critical Accounts - MS-SQL</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">180</field>
+		<field name="GROUP_TYPE_ID">1</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">Critical Accounts - Sybase ASE</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">181</field>
+		<field name="GROUP_TYPE_ID">1</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">Critical Accounts - Sybase IQ</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">182</field>
+		<field name="GROUP_TYPE_ID">1</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">Critical Accounts - Teradata</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">183</field>
+		<field name="GROUP_TYPE_ID">1</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">Critical Accounts - Netezza</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">184</field>
+		<field name="GROUP_TYPE_ID">60</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Connection Profiling List</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">185</field>
+		<field name="GROUP_TYPE_ID">55</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">MS-SQL Access to server level permissions granted to non-Database Administrators</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">186</field>
+		<field name="GROUP_TYPE_ID">55</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">MS-SQL MSDB database Role Members Privilege</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">187</field>
+		<field name="GROUP_TYPE_ID">2</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">MongoDB Skip Commands</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">188</field>
+		<field name="GROUP_TYPE_ID">2</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Create User Commands</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">189</field>
+		<field name="GROUP_TYPE_ID">2</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Drop User Commands</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">190</field>
+		<field name="GROUP_TYPE_ID">1</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Application DB User</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">191</field>
+		<field name="GROUP_TYPE_ID">7</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Application Source Program</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">192</field>
+		<field name="GROUP_TYPE_ID">1</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Analytic Exclude DB User</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">193</field>
+		<field name="GROUP_TYPE_ID">1</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Analytic Exclude OS User</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">194</field>
+		<field name="GROUP_TYPE_ID">19</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Analytic Exclude Server IP</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">195</field>
+		<field name="GROUP_TYPE_ID">27</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Analytic Exclude Service Name</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">196</field>
+		<field name="GROUP_TYPE_ID">7</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Analytic Exclude Source Program</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">197</field>
+		<field name="GROUP_TYPE_ID">1</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">Oracle Default Password</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">198</field>
+		<field name="GROUP_TYPE_ID">55</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">DB2 for i Profile User Exclusions</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">199</field>
+		<field name="GROUP_TYPE_ID">55</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">ORACLE exclude system users</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">200</field>
+		<field name="GROUP_TYPE_ID">55</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">Oracle Weak Passwords Are Screened</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">201</field>
+		<field name="GROUP_TYPE_ID">1</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">Dependencies_exclude_schema-Oracle</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">202</field>
+		<field name="GROUP_TYPE_ID">1</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">Dependencies_exclude_schema-MSSQL</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">203</field>
+		<field name="GROUP_TYPE_ID">1</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">Dependencies_exclude_schema-SybaseASE</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">204</field>
+		<field name="GROUP_TYPE_ID">1</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">Dependencies_exclude_schema-SybaseIQ</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">205</field>
+		<field name="GROUP_TYPE_ID">1</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">Dependencies_exclude_schema-DB2LUW</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">206</field>
+		<field name="GROUP_TYPE_ID">1</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">Dependencies_exclude_schema-DB2zOS</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">207</field>
+		<field name="GROUP_TYPE_ID">1</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">Dependencies_exclude_schema-Informix</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">208</field>
+		<field name="GROUP_TYPE_ID">15</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">DB2 for i exclude system schemas - grant to PUBLIC</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">209</field>
+		<field name="GROUP_TYPE_ID">15</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">DB2 for i exclude system schemas - grant to individual users</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">210</field>
+		<field name="GROUP_TYPE_ID">15</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">DB2 for i exclude system schemas - grant option on</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">211</field>
+		<field name="GROUP_TYPE_ID">15</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">DB2 for i exclude system schemas - entitlement report</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">212</field>
+		<field name="GROUP_TYPE_ID">43</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">MongoDB Database Version+Patches</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">213</field>
+		<field name="GROUP_TYPE_ID">43</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">Aster Database Version+Patches</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">214</field>
+		<field name="GROUP_TYPE_ID">19</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">SOX Financial Server IPs</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">215</field>
+		<field name="GROUP_TYPE_ID">28</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">SOX Financial DBs</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">216</field>
+		<field name="GROUP_TYPE_ID">12</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">SOX Recognized Client IPs</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">217</field>
+		<field name="GROUP_TYPE_ID">1</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">SOX Recognized Users</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">218</field>
+		<field name="GROUP_TYPE_ID">7</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">SOX Authorized source programs</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">219</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">SOX Financial Objects</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">220</field>
+		<field name="GROUP_TYPE_ID">1</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">PCI Admin Users</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">221</field>
+		<field name="GROUP_TYPE_ID">7</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">PCI Authorized Source Programs</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">222</field>
+		<field name="GROUP_TYPE_ID">12</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">PCI Authorized Client IPs</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">223</field>
+		<field name="GROUP_TYPE_ID">19</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">PCI Authorized Server IPs</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">224</field>
+		<field name="GROUP_TYPE_ID">28</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">PCI Cardholder DBs</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">225</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">PCI Cardholder Sensitive objects</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">226</field>
+		<field name="GROUP_TYPE_ID">1</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">PCI Limited Access Users</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">227</field>
+		<field name="GROUP_TYPE_ID">19</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">BASEL Financial Server IPs</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">228</field>
+		<field name="GROUP_TYPE_ID">28</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">BASEL Financial DBs</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">229</field>
+		<field name="GROUP_TYPE_ID">12</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">BASEL Recognized Client IPs</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">230</field>
+		<field name="GROUP_TYPE_ID">1</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">BASEL Recognized Users</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">231</field>
+		<field name="GROUP_TYPE_ID">7</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">BASEL Authorized source programs</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">232</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">BASEL Financial Objects</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">233</field>
+		<field name="GROUP_TYPE_ID">28</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Data Privacy -  Sensitive Data DBs</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">234</field>
+		<field name="GROUP_TYPE_ID">19</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Data Privacy -  Sensitive Data DB Server IP</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">235</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Data Privacy -  Sensitive Data Objects</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">236</field>
+		<field name="GROUP_TYPE_ID">12</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Data Privacy -  Sensitive Data Recognized Client IPs</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">237</field>
+		<field name="GROUP_TYPE_ID">1</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Data Privacy -  Sensitive Data Authorized Users</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">238</field>
+		<field name="GROUP_TYPE_ID">7</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Data Privacy -  Sensitive Data Authorized Source Programs</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">239</field>
+		<field name="GROUP_TYPE_ID">1</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Data Privacy -  Sensitive Data Authorized Admin Users</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">240</field>
+		<field name="GROUP_TYPE_ID">30</field>
+		<field name="APPLICATION_ID">2</field>
+		<field name="GROUP_DESCRIPTION">DB2/Z Negative SQL Codes</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">241</field>
+		<field name="GROUP_TYPE_ID">79</field>
+		<field name="APPLICATION_ID">2</field>
+		<field name="GROUP_DESCRIPTION">zOS DD Name</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">242</field>
+		<field name="GROUP_TYPE_ID">82</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Sensitive Files</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">243</field>
+		<field name="GROUP_TYPE_ID">82</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Auditing Path</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">244</field>
+		<field name="GROUP_TYPE_ID">18</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Unauthorized_Users</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">245</field>
+		<field name="GROUP_TYPE_ID">18</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Authorized_Users</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">246</field>
+		<field name="GROUP_TYPE_ID">43</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">SAP Hana Database Version+Patches</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">247</field>
+		<field name="GROUP_TYPE_ID">86</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">FAM Commands</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">248</field>
+		<field name="GROUP_TYPE_ID">1</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">SAP Hana exclude default grantees</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">249</field>
+		<field name="GROUP_TYPE_ID">1</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">SAP Hana exclude technical database users</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">250</field>
+		<field name="GROUP_TYPE_ID">1</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">Teradata exclude default grantees</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">251</field>
+		<field name="GROUP_TYPE_ID">1</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">Oracle exclude default system grantees</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">252</field>
+		<field name="GROUP_TYPE_ID">1</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">Oracle exclude default object owners</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:23</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">253</field>
+		<field name="GROUP_TYPE_ID">87</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Categories</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:24</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">254</field>
+		<field name="GROUP_TYPE_ID">30</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">All Failed Authorization</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:24</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">255</field>
+		<field name="GROUP_TYPE_ID">2</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Hadoop Permission Commands</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:24</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">256</field>
+		<field name="GROUP_TYPE_ID">1</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Hadoop Privileged users</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:24</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">257</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Hadoop Sensitive Objects</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:24</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">258</field>
+		<field name="GROUP_TYPE_ID">13</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Hadoop Server types</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:24</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">259</field>
+		<field name="GROUP_TYPE_ID">60</field>
+		<field name="APPLICATION_ID">2</field>
+		<field name="GROUP_DESCRIPTION">DAMX - Standard Activity</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:24</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">260</field>
+		<field name="GROUP_TYPE_ID">60</field>
+		<field name="APPLICATION_ID">2</field>
+		<field name="GROUP_DESCRIPTION">DAMX - Suspicious Connections</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:24</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">261</field>
+		<field name="GROUP_TYPE_ID">43</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">Cloudera Hadoop Version+Patches</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:24</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">262</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Temporary Objects Name Template(regex)</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:24</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">263</field>
+		<field name="GROUP_TYPE_ID">2</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Suspicious commands for STP attacks</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:24</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">264</field>
+		<field name="GROUP_TYPE_ID">43</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">Cloudera Manager Version+Patches</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:24</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">265</field>
+		<field name="GROUP_TYPE_ID">43</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">HDFS Version+Patches</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:24</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">266</field>
+		<field name="GROUP_TYPE_ID">88</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">QRadarBlockingConnection</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME">QRadar</field>
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:24</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">267</field>
+		<field name="GROUP_TYPE_ID">88</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">QRadarAlertingConnection</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME">QRadar</field>
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:24</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">268</field>
+		<field name="GROUP_TYPE_ID">88</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">QRadarLogConnection</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME">QRadar</field>
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:24</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">269</field>
+		<field name="GROUP_TYPE_ID">2</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Create procedure</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:24</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">270</field>
+		<field name="GROUP_TYPE_ID">2</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">Drop procedure</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:24</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">271</field>
+		<field name="GROUP_TYPE_ID">1</field>
+		<field name="APPLICATION_ID">8</field>
+		<field name="GROUP_DESCRIPTION">Cloudera Manager Default Password</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:24</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">272</field>
+		<field name="GROUP_TYPE_ID">7</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">GDPR Personal Data Authorized Source Programs</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:24</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">273</field>
+		<field name="GROUP_TYPE_ID">12</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">GDPR Personal Data Authorized Client IPs</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:24</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">274</field>
+		<field name="GROUP_TYPE_ID">19</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">GDPR Personal Data Authorized Server IPs</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:24</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">275</field>
+		<field name="GROUP_TYPE_ID">28</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">GDPR Personal Data DBs</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:24</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">276</field>
+		<field name="GROUP_TYPE_ID">3</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">GDPR Personal Data Sensitive Objects</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:24</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">277</field>
+		<field name="GROUP_TYPE_ID">1</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">GDPR Personal Data Admin Users</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:24</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">278</field>
+		<field name="GROUP_TYPE_ID">1</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">GDPR Personal Data Authorized Users</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:24</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">279</field>
+		<field name="GROUP_TYPE_ID">1</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">GDPR Personal Data Unauthorized Users</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME" xsi:nil="true" />
+		<field name="CLASSIFICATION_NAME" xsi:nil="true" />
+		<field name="TIMESTAMP">2016-08-12 08:41:24</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	<row>
+		<field name="GROUP_ID">20001</field>
+		<field name="GROUP_TYPE_ID">82</field>
+		<field name="APPLICATION_ID">0</field>
+		<field name="GROUP_DESCRIPTION">FAM filepaths for Tong</field>
+		<field name="GROUP_SUBTYPE" xsi:nil="true" />
+		<field name="CATEGORY_NAME"></field>
+		<field name="CLASSIFICATION_NAME"></field>
+		<field name="TIMESTAMP">2016-08-12 14:33:33</field>
+		<field name="GROUP_CONTENT_TYPE">M</field>
+	</row>
+	</table_data>
+</database>
+</mysqldump>

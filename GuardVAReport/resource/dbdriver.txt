@@ -1,0 +1,322 @@
+<?xml version="1.0"?>
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="TURBINE">
+	<table_structure name="DB_DRIVER">
+		<field Field="DB_DRIVER_ID" Type="int(11)" Null="NO" Key="PRI" Default="0" Extra="" Comment="" />
+		<field Field="DATASOURCE_TYPE_ID" Type="int(11)" Null="NO" Key="" Default="0" Extra="" Comment="" />
+		<field Field="NAME" Type="varchar(50)" Null="NO" Key="" Default="" Extra="" Comment="" />
+		<field Field="DRIVER_CLASS" Type="varchar(255)" Null="NO" Key="" Default="" Extra="" Comment="" />
+		<field Field="URL_TEMPLATE" Type="varchar(255)" Null="NO" Key="" Default="" Extra="" Comment="" />
+		<field Field="BASE_URL_TEMPLATE" Type="varchar(255)" Null="NO" Key="" Default="" Extra="" Comment="" />
+		<field Field="DRIVER_STORED" Type="int(1)" Null="NO" Key="" Default="0" Extra="" Comment="" />
+		<field Field="TIMESTAMP" Type="timestamp" Null="NO" Key="" Default="CURRENT_TIMESTAMP" Extra="on update CURRENT_TIMESTAMP" Comment="" />
+		<key Table="DB_DRIVER" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="DB_DRIVER_ID" Collation="A" Cardinality="27" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="DB_DRIVER" Non_unique="0" Key_name="DB_DRIVER_ID" Seq_in_index="1" Column_name="DB_DRIVER_ID" Collation="A" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="DB_DRIVER" Non_unique="0" Key_name="DB_DRIVER_ID" Seq_in_index="2" Column_name="DATASOURCE_TYPE_ID" Collation="A" Cardinality="27" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<options Name="DB_DRIVER" Engine="MyISAM" Version="10" Row_format="Dynamic" Rows="27" Avg_row_length="171" Data_length="4628" Max_data_length="281474976710655" Index_length="12288" Data_free="0" Create_time="2016-08-12 08:41:57" Update_time="2016-08-12 08:41:57" Collation="utf8_general_ci" Create_options="" Comment="" />
+	</table_structure>
+	<table_data name="DB_DRIVER">
+	<row>
+		<field name="DB_DRIVER_ID">1</field>
+		<field name="DATASOURCE_TYPE_ID">1</field>
+		<field name="NAME">Oracle (DataDirect - SID)</field>
+		<field name="DRIVER_CLASS">com.ibm.guardium.jdbc.oracle.OracleDriver</field>
+		<field name="URL_TEMPLATE">jdbc:guardium:oracle://&lt;HOST&gt;:&lt;PORT&gt;;SID=&lt;SERVICE_NAME&gt;;CryptoProtocolVersion=TLSv1,TLSv1.1,TLSv1.2</field>
+		<field name="BASE_URL_TEMPLATE">jdbc:guardium:oracle://&lt;HOST&gt;:&lt;PORT&gt;;CryptoProtocolVersion=TLSv1,TLSv1.1,TLSv1.2</field>
+		<field name="DRIVER_STORED">1</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:51</field>
+	</row>
+	<row>
+		<field name="DB_DRIVER_ID">22</field>
+		<field name="DATASOURCE_TYPE_ID">1</field>
+		<field name="NAME">Oracle (DataDirect - Service Name)</field>
+		<field name="DRIVER_CLASS">com.ibm.guardium.jdbc.oracle.OracleDriver</field>
+		<field name="URL_TEMPLATE">jdbc:guardium:oracle://&lt;HOST&gt;:&lt;PORT&gt;;ServiceName=&lt;SERVICE_NAME&gt;;CryptoProtocolVersion=TLSv1,TLSv1.1,TLSv1.2</field>
+		<field name="BASE_URL_TEMPLATE">jdbc:guardium:oracle://&lt;HOST&gt;:&lt;PORT&gt;;CryptoProtocolVersion=TLSv1,TLSv1.1,TLSv1.2</field>
+		<field name="DRIVER_STORED">1</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:51</field>
+	</row>
+	<row>
+		<field name="DB_DRIVER_ID">2</field>
+		<field name="DATASOURCE_TYPE_ID">2</field>
+		<field name="NAME">DB2</field>
+		<field name="DRIVER_CLASS">com.ibm.db2.jcc.DB2Driver</field>
+		<field name="URL_TEMPLATE">jdbc:db2://&lt;HOST&gt;:&lt;PORT&gt;/&lt;SERVICE_NAME&gt;</field>
+		<field name="BASE_URL_TEMPLATE">jdbc:db2://&lt;HOST&gt;:&lt;PORT&gt;/&lt;SERVICE_NAME&gt;</field>
+		<field name="DRIVER_STORED">1</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:51</field>
+	</row>
+	<row>
+		<field name="DB_DRIVER_ID">3</field>
+		<field name="DATASOURCE_TYPE_ID">3</field>
+		<field name="NAME">Sybase</field>
+		<field name="DRIVER_CLASS">com.sybase.jdbc3.jdbc.SybDriver</field>
+		<field name="URL_TEMPLATE">jdbc:sybase:Tds:&lt;HOST&gt;:&lt;PORT&gt;/&lt;DB_NAME&gt;</field>
+		<field name="BASE_URL_TEMPLATE">jdbc:sybase:Tds:&lt;HOST&gt;:&lt;PORT&gt;</field>
+		<field name="DRIVER_STORED">1</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:51</field>
+	</row>
+	<row>
+		<field name="DB_DRIVER_ID">4</field>
+		<field name="DATASOURCE_TYPE_ID">4</field>
+		<field name="NAME">MS SQL SERVER (DataDirect)</field>
+		<field name="DRIVER_CLASS">com.ibm.guardium.jdbc.sqlserver.SQLServerDriver</field>
+		<field name="URL_TEMPLATE">jdbc:guardium:sqlserver://&lt;HOST&gt;:&lt;PORT&gt;;DatabaseName=&lt;DB_NAME&gt;;CryptoProtocolVersion=TLSv1,TLSv1.1,TLSv1.2</field>
+		<field name="BASE_URL_TEMPLATE">jdbc:guardium:sqlserver://&lt;HOST&gt;:&lt;PORT&gt;;CryptoProtocolVersion=TLSv1,TLSv1.1,TLSv1.2</field>
+		<field name="DRIVER_STORED">1</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:51</field>
+	</row>
+	<row>
+		<field name="DB_DRIVER_ID">24</field>
+		<field name="DATASOURCE_TYPE_ID">4</field>
+		<field name="NAME">MS SQL SERVER (DataDirect - Dynamic Port)</field>
+		<field name="DRIVER_CLASS">com.ibm.guardium.jdbc.sqlserver.SQLServerDriver</field>
+		<field name="URL_TEMPLATE">jdbc:guardium:sqlserver://&lt;HOST&gt;\&lt;SERVICE_NAME&gt;;DatabaseName=&lt;DB_NAME&gt;;CryptoProtocolVersion=TLSv1,TLSv1.1,TLSv1.2</field>
+		<field name="BASE_URL_TEMPLATE">jdbc:guardium:sqlserver://&lt;HOST&gt;\&lt;SERVICE_NAME&gt;;CryptoProtocolVersion=TLSv1,TLSv1.1,TLSv1.2</field>
+		<field name="DRIVER_STORED">1</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:51</field>
+	</row>
+	<row>
+		<field name="DB_DRIVER_ID">5</field>
+		<field name="DATASOURCE_TYPE_ID">5</field>
+		<field name="NAME">Informix</field>
+		<field name="DRIVER_CLASS">com.informix.jdbc.IfxDriver</field>
+		<field name="URL_TEMPLATE">jdbc:informix-sqli://&lt;HOST&gt;:&lt;PORT&gt;/&lt;DB_NAME&gt;:informixserver=&lt;DBSERVER_NAME&gt;;DB_LOCALE=&lt;LOCALE&gt;</field>
+		<field name="BASE_URL_TEMPLATE">jdbc:informix-sqli://&lt;HOST&gt;:&lt;PORT&gt;/sysmaster:informixserver=&lt;DBSERVER_NAME&gt;</field>
+		<field name="DRIVER_STORED">1</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:51</field>
+	</row>
+	<row>
+		<field name="DB_DRIVER_ID">6</field>
+		<field name="DATASOURCE_TYPE_ID">6</field>
+		<field name="NAME">MySQL</field>
+		<field name="DRIVER_CLASS">com.mysql.cj.jdbc.Driver</field>
+		<field name="URL_TEMPLATE">jdbc:mysql://&lt;HOST&gt;:&lt;PORT&gt;/&lt;DB_NAME&gt;?autoReconnect=true</field>
+		<field name="BASE_URL_TEMPLATE">jdbc:mysql://&lt;HOST&gt;:&lt;PORT&gt;?autoReconnect=true</field>
+		<field name="DRIVER_STORED">1</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:51</field>
+	</row>
+	<row>
+		<field name="DB_DRIVER_ID">7</field>
+		<field name="DATASOURCE_TYPE_ID">7</field>
+		<field name="NAME">TEXT</field>
+		<field name="DRIVER_CLASS">com.hxtt.sql.text.TextDriver</field>
+		<field name="URL_TEMPLATE">jdbc:csv:////var/dump</field>
+		<field name="BASE_URL_TEMPLATE">jdbc:csv:////var/dump</field>
+		<field name="DRIVER_STORED">1</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:51</field>
+	</row>
+	<row>
+		<field name="DB_DRIVER_ID">8</field>
+		<field name="DATASOURCE_TYPE_ID">8</field>
+		<field name="NAME">TEXT:HTTP</field>
+		<field name="DRIVER_CLASS">com.hxtt.sql.text.TextDriver</field>
+		<field name="URL_TEMPLATE">jdbc:csv:http://&lt;HOST&gt;&lt;PORT&gt;/&lt;SERVICE_NAME&gt;?tmpdir=/opt/IBM/Guardium/tomcat/webapps/ROOT/dynamic/images;ignoreDirtyData=true</field>
+		<field name="BASE_URL_TEMPLATE">jdbc:csv:http://&lt;HOST&gt;&lt;PORT&gt;/&lt;SERVICE_NAME&gt;?tmpdir=/opt/IBM/Guardium/tomcat/webapps/ROOT/dynamic/images;ignoreDirtyData=true</field>
+		<field name="DRIVER_STORED">1</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:51</field>
+	</row>
+	<row>
+		<field name="DB_DRIVER_ID">9</field>
+		<field name="DATASOURCE_TYPE_ID">9</field>
+		<field name="NAME">TEXT:FTP</field>
+		<field name="DRIVER_CLASS">com.hxtt.sql.text.TextDriver</field>
+		<field name="URL_TEMPLATE">jdbc:csv:ftp://&lt;USER&gt;:&lt;PASSWD&gt;@&lt;HOST&gt;&lt;PORT&gt;/&lt;SERVICE_NAME&gt;?tmpdir=/opt/IBM/Guardium/tomcat/webapps/ROOT/dynamic/images;ignoreDirtyData=true</field>
+		<field name="BASE_URL_TEMPLATE">jdbc:csv:ftp://&lt;USER&gt;:&lt;PASSWD&gt;@&lt;HOST&gt;&lt;PORT&gt;/&lt;SERVICE_NAME&gt;?tmpdir=/opt/IBM/Guardium/tomcat/webapps/ROOT/dynamic/images;ignoreDirtyData=true</field>
+		<field name="DRIVER_STORED">1</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:51</field>
+	</row>
+	<row>
+		<field name="DB_DRIVER_ID">10</field>
+		<field name="DATASOURCE_TYPE_ID">10</field>
+		<field name="NAME">TEXT:SAMBA</field>
+		<field name="DRIVER_CLASS">com.hxtt.sql.text.TextDriver</field>
+		<field name="URL_TEMPLATE">jdbc:csv:smb://&lt;USER&gt;:&lt;PASSWD&gt;@&lt;HOST&gt;&lt;PORT&gt;/&lt;SERVICE_NAME&gt;/</field>
+		<field name="BASE_URL_TEMPLATE">jdbc:csv:smb://&lt;USER&gt;:&lt;PASSWD&gt;@&lt;HOST&gt;&lt;PORT&gt;/&lt;SERVICE_NAME&gt;/</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:51</field>
+	</row>
+	<row>
+		<field name="DB_DRIVER_ID">11</field>
+		<field name="DATASOURCE_TYPE_ID">11</field>
+		<field name="NAME">TEXT:HTTPS</field>
+		<field name="DRIVER_CLASS">com.hxtt.sql.text.TextDriver</field>
+		<field name="URL_TEMPLATE">jdbc:csv:https://&lt;HOST&gt;&lt;PORT&gt;/&lt;SERVICE_NAME&gt;?tmpdir=/opt/IBM/Guardium/tomcat/webapps/ROOT/dynamic/images;ignoreDirtyData=true</field>
+		<field name="BASE_URL_TEMPLATE">jdbc:csv:https://&lt;HOST&gt;&lt;PORT&gt;/&lt;SERVICE_NAME&gt;?tmpdir=/opt/IBM/Guardium/tomcat/webapps/ROOT/dynamic/images;ignoreDirtyData=true</field>
+		<field name="DRIVER_STORED">1</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:51</field>
+	</row>
+	<row>
+		<field name="DB_DRIVER_ID">12</field>
+		<field name="DATASOURCE_TYPE_ID">12</field>
+		<field name="NAME">TERADATA</field>
+		<field name="DRIVER_CLASS">com.teradata.jdbc.TeraDriver</field>
+		<field name="URL_TEMPLATE">jdbc:teradata://&lt;HOST&gt;/DBS_PORT=&lt;PORT&gt;,DATABASE=&lt;DB_NAME&gt;</field>
+		<field name="BASE_URL_TEMPLATE">jdbc:teradata://&lt;HOST&gt;/DBS_PORT=&lt;PORT&gt;</field>
+		<field name="DRIVER_STORED">1</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:51</field>
+	</row>
+	<row>
+		<field name="DB_DRIVER_ID">13</field>
+		<field name="DATASOURCE_TYPE_ID">13</field>
+		<field name="NAME">NA</field>
+		<field name="DRIVER_CLASS">none</field>
+		<field name="URL_TEMPLATE">none</field>
+		<field name="BASE_URL_TEMPLATE">none</field>
+		<field name="DRIVER_STORED">1</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:51</field>
+	</row>
+	<row>
+		<field name="DB_DRIVER_ID">14</field>
+		<field name="DATASOURCE_TYPE_ID">14</field>
+		<field name="NAME">DB2 FOR i</field>
+		<field name="DRIVER_CLASS">com.ibm.as400.access.AS400JDBCDriver</field>
+		<field name="URL_TEMPLATE">jdbc:as400://&lt;HOST&gt;:&lt;PORT&gt;/&lt;DB_NAME&gt;;query timeout mechanism=cancel</field>
+		<field name="BASE_URL_TEMPLATE">jdbc:as400://&lt;HOST&gt;:&lt;PORT&gt;;query timeout mechanism=cancel</field>
+		<field name="DRIVER_STORED">1</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:51</field>
+	</row>
+	<row>
+		<field name="DB_DRIVER_ID">15</field>
+		<field name="DATASOURCE_TYPE_ID">15</field>
+		<field name="NAME">PostgreSQL</field>
+		<field name="DRIVER_CLASS">org.postgresql.Driver</field>
+		<field name="URL_TEMPLATE">jdbc:postgresql://&lt;HOST&gt;:&lt;PORT&gt;/&lt;DB_NAME&gt;</field>
+		<field name="BASE_URL_TEMPLATE">jdbc:postgresql://&lt;HOST&gt;</field>
+		<field name="DRIVER_STORED">1</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:51</field>
+	</row>
+	<row>
+		<field name="DB_DRIVER_ID">16</field>
+		<field name="DATASOURCE_TYPE_ID">16</field>
+		<field name="NAME">Netezza</field>
+		<field name="DRIVER_CLASS">org.netezza.Driver</field>
+		<field name="URL_TEMPLATE">jdbc:netezza://&lt;HOST&gt;:&lt;PORT&gt;/&lt;DB_NAME&gt;</field>
+		<field name="BASE_URL_TEMPLATE">jdbc:netezza://&lt;HOST&gt;/&lt;DB_NAME&gt;</field>
+		<field name="DRIVER_STORED">1</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:51</field>
+	</row>
+	<row>
+		<field name="DB_DRIVER_ID">17</field>
+		<field name="DATASOURCE_TYPE_ID">17</field>
+		<field name="NAME">DB2 z/OS</field>
+		<field name="DRIVER_CLASS">com.ibm.db2.jcc.DB2Driver</field>
+		<field name="URL_TEMPLATE">jdbc:db2://&lt;HOST&gt;:&lt;PORT&gt;/&lt;SERVICE_NAME&gt;</field>
+		<field name="BASE_URL_TEMPLATE">jdbc:db2://&lt;HOST&gt;:&lt;PORT&gt;/&lt;SERVICE_NAME&gt;</field>
+		<field name="DRIVER_STORED">1</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:51</field>
+	</row>
+	<row>
+		<field name="DB_DRIVER_ID">18</field>
+		<field name="DATASOURCE_TYPE_ID">18</field>
+		<field name="NAME">Sybase IQ</field>
+		<field name="DRIVER_CLASS">com.sybase.jdbc3.jdbc.SybDriver</field>
+		<field name="URL_TEMPLATE">jdbc:sybase:Tds:&lt;HOST&gt;:&lt;PORT&gt;/&lt;DB_NAME&gt;</field>
+		<field name="BASE_URL_TEMPLATE">jdbc:sybase:Tds:&lt;HOST&gt;:&lt;PORT&gt;</field>
+		<field name="DRIVER_STORED">1</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:51</field>
+	</row>
+	<row>
+		<field name="DB_DRIVER_ID">19</field>
+		<field name="DATASOURCE_TYPE_ID">19</field>
+		<field name="NAME">GreenplumDB</field>
+		<field name="DRIVER_CLASS">org.postgresql.Driver</field>
+		<field name="URL_TEMPLATE">jdbc:postgresql://&lt;HOST&gt;:&lt;PORT&gt;/&lt;DB_NAME&gt;</field>
+		<field name="BASE_URL_TEMPLATE">jdbc:postgresql://&lt;HOST&gt;</field>
+		<field name="DRIVER_STORED">1</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:51</field>
+	</row>
+	<row>
+		<field name="DB_DRIVER_ID">20</field>
+		<field name="DATASOURCE_TYPE_ID">20</field>
+		<field name="NAME">Aster</field>
+		<field name="DRIVER_CLASS">com.asterdata.ncluster.Driver</field>
+		<field name="URL_TEMPLATE">jdbc:ncluster://&lt;HOST&gt;:&lt;PORT&gt;/&lt;DB_NAME&gt;</field>
+		<field name="DRIVER_STORED">1</field>
+		<field name="BASE_URL_TEMPLATE">jdbc:ncluster://&lt;HOST&gt;/&lt;DB_NAME&gt;</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:51</field>
+	</row>
+	<row>
+		<field name="DB_DRIVER_ID">21</field>
+		<field name="DATASOURCE_TYPE_ID">21</field>
+		<field name="NAME">MongoDB</field>
+		<field name="DRIVER_CLASS"></field>
+		<field name="URL_TEMPLATE"></field>
+		<field name="BASE_URL_TEMPLATE"></field>
+		<field name="DRIVER_STORED">1</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:51</field>
+	</row>
+	<row>
+		<field name="DB_DRIVER_ID">23</field>
+		<field name="DATASOURCE_TYPE_ID">22</field>
+		<field name="NAME">SAP HANA</field>
+		<field name="DRIVER_CLASS">com.sap.db.jdbc.Driver</field>
+		<field name="URL_TEMPLATE">jdbc:sap://&lt;HOST&gt;:&lt;PORT&gt;/?autocommit=false</field>
+		<field name="BASE_URL_TEMPLATE">jdbc:sap://&lt;HOST&gt;:&lt;PORT&gt;/?autocommit=false</field>
+		<field name="DRIVER_STORED">1</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:51</field>
+	</row>
+	<row>
+		<field name="DB_DRIVER_ID">25</field>
+		<field name="DATASOURCE_TYPE_ID">23</field>
+		<field name="NAME">Cloudera (HIVE)</field>
+		<field name="DRIVER_CLASS">com.cloudera.hive.jdbc41.HS2Driver</field>
+		<field name="URL_TEMPLATE">jdbc:hive2://&lt;HOST&gt;:&lt;PORT&gt;/&lt;DB_NAME&gt;;AuthMech=&lt;AUTH_MECH&gt;</field>
+		<field name="BASE_URL_TEMPLATE">jdbc:hive2://&lt;HOST&gt;:&lt;PORT&gt;;AuthMech=&lt;AUTH_MECH&gt;</field>
+		<field name="DRIVER_STORED">1</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:51</field>
+	</row>
+	<row>
+		<field name="DB_DRIVER_ID">26</field>
+		<field name="DATASOURCE_TYPE_ID">24</field>
+		<field name="NAME">Cloudera (IMPALA)</field>
+		<field name="DRIVER_CLASS">com.cloudera.impala.jdbc41.Driver</field>
+		<field name="URL_TEMPLATE">jdbc:impala://&lt;HOST&gt;:&lt;PORT&gt;</field>
+		<field name="BASE_URL_TEMPLATE">jdbc:impala://&lt;HOST&gt;:&lt;PORT&gt;</field>
+		<field name="DRIVER_STORED">1</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:51</field>
+	</row>
+	<row>
+		<field name="DB_DRIVER_ID">27</field>
+		<field name="DATASOURCE_TYPE_ID">25</field>
+		<field name="NAME">Cloudera (Manager)</field>
+		<field name="DRIVER_CLASS"></field>
+		<field name="URL_TEMPLATE"></field>
+		<field name="BASE_URL_TEMPLATE"></field>
+		<field name="DRIVER_STORED">1</field>
+		<field name="TIMESTAMP">2016-08-12 08:41:51</field>
+	</row>
+
+	<row>
+		<field name="DB_DRIVER_ID">30</field>
+		<field name="DATASOURCE_TYPE_ID">1</field>
+		<field name="NAME">Oracle (SID)</field>
+		<field name="DRIVER_CLASS">oracle.jdbc.driver.OracleDriver</field>
+		<field name="URL_TEMPLATE">jdbc:oracle:thin:@&lt;HOST&gt;:&lt;PORT&gt;:&lt;SERVICE_NAME&gt;</field>
+		<field name="BASE_URL_TEMPLATE">jdbc:oracle:thin:@&lt;HOST&gt;:&lt;PORT&gt;:&lt;SERVICE_NAME&gt;</field>
+		<field name="DRIVER_STORED">0</field>
+		<field name="TIMESTAMP">Mon Aug 22 10:55:49 PDT 2016</field>
+	</row>
+	<row>
+		<field name="DB_DRIVER_ID">31</field>
+		<field name="DATASOURCE_TYPE_ID">1</field>
+		<field name="NAME">Oracle (Service Name)</field>
+		<field name="DRIVER_CLASS">oracle.jdbc.driver.OracleDriver</field>
+		<field name="URL_TEMPLATE">jdbc:oracle:thin:@//&lt;HOST&gt;:&lt;PORT&gt;/&lt;SERVICE_NAME&gt;</field>
+		<field name="BASE_URL_TEMPLATE">jdbc:oracle:thin:@//&lt;HOST&gt;:&lt;PORT&gt;/&lt;SERVICE_NAME&gt;</field>
+		<field name="DRIVER_STORED">0</field>
+		<field name="TIMESTAMP">Mon Aug 22 10:55:49 PDT 2016</field>
+	</row>
+	<row>
+		<field name="DB_DRIVER_ID">32</field>
+		<field name="DATASOURCE_TYPE_ID">4</field>
+		<field name="NAME">MS SQL Server</field>
+		<field name="DRIVER_CLASS">net.sourceforge.jtds.jdbc.Driver</field>
+		<field name="URL_TEMPLATE">jdbc:jtds:sqlserver://&lt;HOST&gt;:&lt;PORT&gt;;DatabaseName=&lt;DB_NAME&gt;</field>
+		<field name="BASE_URL_TEMPLATE">jdbc:jtds:sqlserver://&lt;HOST&gt;:&lt;PORT&gt;</field>
+		<field name="DRIVER_STORED">0</field>
+		<field name="TIMESTAMP">Mon Aug 22 10:55:49 PDT 2016</field>
+	</row>
+
+	</table_data>
+</database>
+</mysqldump>
