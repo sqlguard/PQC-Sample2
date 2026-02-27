@@ -15,7 +15,7 @@ pycrypto==2.6.1
 # 2. Cryptography - HIGH
 # CVE-2018-10903: Bleichenbacher attack on RSA PKCS#1 v1.5
 # Fixed in: 2.3+
-cryptography==2.3
+cryptography==46.0.5
 
 # 3. PyOpenSSL - HIGH  
 # CVE-2018-1000807: Use-after-free vulnerability
