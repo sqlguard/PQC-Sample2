@@ -1,0 +1,86 @@
+# Vulnerable Dependencies for Testing Dependabot Alerts
+# WARNING: DO NOT USE IN PRODUCTION!
+# These are intentionally vulnerable versions for testing Dependabot detection
+
+# ============================================================================
+# CRYPTO-RELATED VULNERABLE PACKAGES
+# ============================================================================
+
+# 1. PyCrypto - CRITICAL
+# CVE-2018-6594: Weak random number generation
+# Status: Package deprecated, no fix available
+# Recommendation: Migrate to cryptography or pycryptodome
+pycrypto==2.6.1
+
+# 2. Cryptography - HIGH
+# CVE-2018-10903: Bleichenbacher attack on RSA PKCS#1 v1.5
+# Fixed in: 2.3+
+cryptography==2.3
+
+# 3. PyOpenSSL - HIGH  
+# CVE-2018-1000807: Use-after-free vulnerability
+# Fixed in: 17.5.0+
+pyOpenSSL==17.5.0
+
+# 4. Paramiko - HIGH
+# CVE-2018-7750: Authentication bypass
+# Fixed in: 2.4.1+
+paramiko==2.0.0
+
+# 5. PyJWT - MEDIUM
+# CVE-2017-11424: Key confusion vulnerability
+# Fixed in: 1.5.0+
+PyJWT==1.4.0
+
+# ============================================================================
+# OTHER PACKAGES WITH CRYPTO/SECURITY ISSUES
+# ============================================================================
+
+# 6. Requests - MEDIUM
+# CVE-2018-18074: Credential exposure in redirects
+# Fixed in: 2.20.0+
+requests==2.6.0
+
+# 7. urllib3 - MEDIUM
+# CVE-2019-11324: Certificate validation bypass
+# Fixed in: 1.24.2+
+urllib3==1.24.1
+
+# 8. Django - HIGH (if using crypto features)
+# CVE-2019-6975: Memory exhaustion
+# Fixed in: 2.1.6+
+Django==1.11.0
+
+# 9. Flask - MEDIUM
+# CVE-2018-1000656: JSON encoding issue
+# Fixed in: 0.12.3+
+Flask==0.12.2
+
+# 10. PyYAML - CRITICAL
+# CVE-2017-18342: Arbitrary code execution
+# Fixed in: 5.1+
+PyYAML==3.12
+
+# ============================================================================
+# INSTRUCTIONS
+# ============================================================================
+# 
+# To test Dependabot:
+# 1. Copy this file to your repository as requirements.txt
+# 2. Commit and push to GitHub
+# 3. Enable Dependabot in repository settings
+# 4. Wait 5-10 minutes for alerts to appear
+# 5. Check Security tab for Dependabot alerts
+# 6. Review the PRs Dependabot creates to fix vulnerabilities
+#
+# Expected Results:
+# - 10+ security alerts
+# - Multiple Dependabot PRs
+# - Email notifications (if enabled)
+#
+# To fix:
+# - Accept Dependabot PRs
+# - Or manually update to latest versions
+# - Or use: pip install --upgrade -r requirements.txt
+#
+# ============================================================================
